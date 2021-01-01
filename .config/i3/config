@@ -13,9 +13,9 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:DejaVu Sans Mono 13
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 13
-font pango:Terminus 13px
+#font pango:CascadiaCode, DejaVu Sans Mono 16
+#:font pango:CascadiaCode, DejaVu Sans Mono, Terminus Bold Semi-Condensed 16
+font pango:CascadiaCode, Terminus 16px
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -52,9 +52,7 @@ bindsym $mod+b exec google-chrome
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-
-
-bindsym $mod+d exec dmenu_run  -nb '#455A64' -sb '#81C784' -sf '#222222' -fn 'pango:DejaVu Sans Mono 13'
+bindsym $mod+d exec dmenu_run  -nf '#EEE8D5' -nb '#073642' -sb '#EEE8D5' -sf '#073642' -fn 'pango:CascadiaCode 19' -p 'search: '
 
 
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -206,10 +204,28 @@ bindsym $mod+m exec 'Thunderbird'
 bar {
         status_command i3status
 	separator_symbol "::"
+  colors {
+    background #002B36
+    statusline #EEE8D5
+    separator  #657B83
 
-
+    focused_workspace  #D2BEA1 #EEE8D5 #002B36
+    active_workspace   #1E415B #285577 #EEE8D5
+    inactive_workspace #48585E #657B83 #FDF6E3
+    urgent_workspace   #9F2422 #DC322F #F4EBE9
+    binding_mode       #9F2422 #dc322f #F4EBE9
+  }
 }
 
+
+# class                 border  bground text    indicator child_border
+client.focused          #D2BEA1 #EEE8D5 #002B36 #D2BEA1   #AD9D85
+client.focused_inactive #D2BEA1 #EEE8D5 #002B36 #D2BEA1   #AD9D85
+client.unfocused        #48585E #838D91 #EEE8D5 #838D91   #5F676A
+client.urgent           #9F2422 #DC322F #F4EBE9 #9F2422   #DC322F
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #002B36
 #fontawesome.github.io/Font-Awesome/cheatsheet
 
 # Sreen brightness controls
@@ -256,7 +272,7 @@ bindsym $mod+Shift+S exec gnome-screenshot -i
 exec --no-startup-id "compton -b"
 
 gaps inner 10
-gaps outer 10
+gaps outer 5
 smart_gaps on
 exec "rmmod pcspkr"
 
