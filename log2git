@@ -1,0 +1,4 @@
+#!/bin/zsh
+eval "$(ssh-agent -s)" 
+ssh-add $HOME/.ssh/github_main
+figlet Done!

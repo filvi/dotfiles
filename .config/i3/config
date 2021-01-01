@@ -272,7 +272,7 @@ bindsym $mod+Shift+S exec gnome-screenshot -i
 exec --no-startup-id "compton -b"
 
 gaps inner 10
-gaps outer 5
+gaps outer 0
 smart_gaps on
 exec "rmmod pcspkr"
 
