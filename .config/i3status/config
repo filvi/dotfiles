@@ -25,13 +25,13 @@ disk "/" {
 }
 
 battery 0 {
-        format = "%status %percentage :: avail %remaining"
+        format = "%status %percentage :: Remaning time %remaining"
         format_down = "No battery"
         status_chr = "Charging"
         status_bat = "Battery"
         status_unk = "Unknown"
         status_full = "Full"
-        path = "/sys/class/power_supply/BAT%d/uevent"
+        path = "/sys/class/:wpower_supply/BAT%d/uevent"
         low_threshold = 10
 }
 
