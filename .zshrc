@@ -98,11 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 alias zup="source ~/.zshrc"
-alias zedit="nano ~/.zshrc"
+alias zedit="vim ~/.zshrc"
 alias wt="python3 /home/filvi/Scripts/wt.py"
 alias kb="setxkbmap -layout"
-alias i3c="nano ~/.config/i3/config"
-alias i3b="nano ~/.config/i3status/config"
+alias i3c="vim ~/.config/i3/config"
+alias i3b="vim ~/.config/i3status/config"
 alias ls="lsd -l --group-dirs first"
 alias la="lsd -la --group-dirs first"
 #cat /home/filvi/hello.txt
