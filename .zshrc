@@ -111,3 +111,6 @@ alias config='/usr/bin/git --git-dir=/home/filvi/.cfg/ --work-tree=/home/filvi'
 alias fv="python3 ~/wt.py"
 alias update="sudo dnf update -y"
 alias cat=bat
+path+=('/home/filvi/bin')
+export PATH
+
