@@ -250,16 +250,11 @@ bindsym XF86AudioPrev exec playerctl previous
 # 3 Monitor WORK CS
 # exec xrandr --output eDP-1 --mode 1366x768 --pos 3600x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --primary --mode 1680x1050 --pos 1920x0 --rotate normal --output HDMI-2 --off
 
-# NO 3 Monitor HOME
-# #NO exec xrandr --output eDP-1 --mode 1366x768 --pos 0x120 --rotate normal --output HDMI-1 --primary --mode 2560x1440 --pos 1366x120 --rotate normal --output DP-1 --mode 1680x1050 --pos 3926x0 --rotate left --output HDMI-2 --off
-
-# 2 Monitor Home Fully
-# OLD 2 MONITOR -> exec xrandr --output eDP-1 --off --output HDMI-1 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-1 --primary --mode 1920x1080 --pos 0x416 --rotate normal --output HDMI-2 --off
-# exec xrandr --output eDP-1 --mode 1366x768 --pos 4480x672 --rotate normal --output HDMI-1 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-1 --primary --mode 1920x1080 --pos 0x407 --rotate normal --output HDMI-2 --off
-# exec xrandr --output eDP-1 --mode 1366x768 --pos 4240x672 --rotate normal --output HDMI-1 --primary --mode 2560x1440 --pos 1680x0 --rotate normal --output DP-1 --mode 1680x1050 --pos 0x195 --rotate normal --output HDMI-2 --off
+# 3 Monitor Home fully latest
+exec xrandr --output eDP-1 --primary --mode 1366x768 --pos 4480x336 --rotate normal --output HDMI-1 --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 0x180 --rotate normal --output HDMI-2 --off
 
 
-exec xrandr --output eDP-1 --primary --mode 1366x768 --pos 3600x226 --rotate normal --output HDMI-1 --mode 1680x1050 --pos 1920x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-2 --off
+#exec xrandr --output eDP-1 --primary --mode 1366x768 --pos 3600x226 --rotate normal --output HDMI-1 --mode 1680x1050 --pos 1920x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-2 --off
 
 # switch the position of the main screens for CS @Work
 exec i3-msg "workspace 3: Thunderbird, move workspace to output eDP-1" 
@@ -292,4 +287,4 @@ focus_follows_mouse no
 # prevenire il mouse warping (quando viene spostato il mouse al centro della finestra apena aperta)
 mouse_warping none
 
-for_window [class="Google-Chrome" instance="Salva file"] floating disable
+for_window [class="Google-Chrome" instance="Salva file"] floating enable
