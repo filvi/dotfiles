@@ -3,6 +3,8 @@
 ## Todo Tree Config VScode
 ![Alt text](TodoTree.png "TodoTree config in User/Settings.json")
 
+This should be all it takes to get the output as in the image if not so please take a look at .config/Code/User/settings.json
+
 ```json
  "todohighlight.isEnable": true,
     "todo-tree.general.tags": 
@@ -34,8 +36,6 @@
     "todo-tree.highlights.defaultHighlight": {
         "icon": "alert",
         "type": "text",
-        // "foreground": "white",
-        // "background": "#EB5757",
         "opacity": 50,
         "iconColour": "#EB5757"
     },
