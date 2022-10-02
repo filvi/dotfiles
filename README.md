@@ -4,7 +4,7 @@
 ![Alt text](TodoTree.png "TodoTree config in User/Settings.json")
 
 This should be all it takes to get the output as in the image if not so please take a look at .config/Code/User/settings.json
-
+To change the icon you can use this [https://primer.style/octicons/](https://primer.style/octicons/)
 ```json
  "todohighlight.isEnable": true,
     "todo-tree.general.tags": 
